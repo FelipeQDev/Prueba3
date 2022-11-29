@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="5dp"
+    android:padding="4dp"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityArmas2">
+
+    <EditText
+        android:id="@+id/txtNombreA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre Arma "
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:id="@+id/txtElemento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Elemento Arma "
+        android:textSize="15sp"
+        />
+    <EditText
+        android:id="@+id/txtAtaque"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ataque Arma"
+        android:textSize="15sp"
+        />
+    <EditText
+        android:id="@+id/txtNivel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nivel Requerido"
+        android:textSize="15sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo de Arma"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spTipoArma"
+            android:layout_weight="3"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:id="@+id/btnGuardarAr"
+        android:text="Guardar"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Armas"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvArmas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        />
+</LinearLayout>
